@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay's Gym Fits | Premium Athletic Wear & Streetwear Closet</title>
+    <meta name="description" content="Jay's Gym Fits - Accra's premier gym streetwear and men's closet. Heavyweight pump covers, compression gear, tracksuits, Timberlands, and lifting essentials.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="promo-bar">
+            <p>
+                <span class="promo-highlight">⚡ FREE DELIVERY IN ACCRA ON ORDERS OVER GH₵ 800</span>
+                <span>• NATIONWIDE GHANA SHIPPING 🇬🇭 • WHATSAPP: 0545747166</span>
+                <span class="promo-pill">ORDER DIRECT</span>
+            </p>
+        </div>
+        <nav class="main-nav">
+            <div class="nav-left">
+                <a href="index.html" class="logo" aria-label="Jay's Gym Fits Homepage">
+                    JAY'S <span class="logo-accent">GYM FITS</span><span class="logo-dot"></span>
+                </a>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="shop.html">Shop All</a></li>
+                    <li><a href="shop.html?category=pump-covers">Pump Covers</a></li>
+                    <li><a href="shop.html?category=compression">Compression</a></li>
+                    <li><a href="shop.html?category=shorts">Gym Shorts</a></li>
+                    <li><a href="shop.html?category=hoodies">Hoodies</a></li>
+                    <li><a href="shop.html?category=footwear">Boots &amp; Kicks</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="shop.html?category=sale" class="nav-sale">Sale 🔥</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search gym fits...">
+                    <button class="search-btn" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+                <a href="#" id="account-btn" class="nav-icon" aria-label="Account">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+                <a href="#wishlist" class="nav-icon" aria-label="Wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#" id="cart-btn" class="nav-icon" aria-label="Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?q=80&w=2940&auto=format&fit=crop"
+                    alt="Athlete training in Jay's Gym Fits activewear" class="lazy-load">
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">ACCRA'S PREMIER GYM &amp; STREETWEAR CLOSET</div>
+                <h1 class="hero-title">BUILT FOR THE <span class="text-volt">GRIND</span> &amp; THE STREETS</h1>
+                <p class="hero-description">Heavyweight oversized pump covers, muscle-sculpting compression wear, and street-ready athleisure crafted for athletes who demand presence inside and outside the gym.</p>
+                <div class="hero-cta-group">
+                    <a href="shop.html" class="cta-button primary">SHOP GYM FITS <span>&rarr;</span></a>
+                    <a href="#featured" class="cta-button outline">EXPLORE NEW DROPS</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campaign Grid / Collections -->
+        <section class="campaign-grid">
+            <div class="grid-item large">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2940&auto=format&fit=crop"
+                    alt="Heavyweight Oversized Pump Covers by Jay's Gym Fits" class="lazy-load">
+                <div class="grid-item-content">
+                    <span class="grid-category-tag">SIGNATURE COLLECTION</span>
+                    <h3>HEAVYWEIGHT PUMP COVERS</h3>
+                    <p>280 GSM pure acid-washed cotton engineered with tailored drop-shoulder cuts to accentuate your delts and chest.</p>
+                    <a href="shop.html?category=pump-covers" class="cta-link">EXPLORE PUMP COVERS &rarr;</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=2940&auto=format&fit=crop"
+                    alt="Pro Compression and Tanks" class="lazy-load">
+                <div class="grid-item-content">
+                    <span class="grid-category-tag">HIGH INTENSITY</span>
+                    <h3>PRO COMPRESSION &amp; TANKS</h3>
+                    <p>Ergonomic thermal compression and deep-cut stringers engineered for peak muscular performance.</p>
+                    <a href="shop.html?category=compression" class="cta-link">SHOP COMPRESSION &rarr;</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/Mens-Timberland-x-Avirex-Premium-6Inch-Waterproof-Boot-TBL-ALT4.avif"
+                    alt="Timberland x Avirex Boot and Streetwear Closet" class="lazy-load">
+                <div class="grid-item-content">
+                    <span class="grid-category-tag">CLOSET EXCLUSIVES</span>
+                    <h3>TIMBERLAND × STREETWEAR DROPS</h3>
+                    <p>Iconic waterproof boots, heavy French terry hoodies &amp; tactical cargo pants for true closet drip.</p>
+                    <a href="shop.html?category=footwear" class="cta-link">SHOP CLOSET HEAT &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Banner -->
+        <section class="promo-section">
+            <h2>UNCOMPROMISING PHYSIQUE. <span class="accent-word">RAW STREETWEAR AESTHETICS.</span></h2>
+            <p class="promo-subtext">Join 5,000+ athletes and fitness enthusiasts across Ghana training in Jay's Gym Fits.</p>
+        </section>
+
+        <!-- Featured Products Showcase -->
+        <section class="product-showcase" id="featured">
+            <div class="section-header-wrap">
+                <p class="section-subtitle">THE FRESH DROP</p>
+                <h2 class="section-title">FEATURED GYM FITS &amp; CLOSET GEAR</h2>
+            </div>
+            <div class="product-grid">
+
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge-wrap">
+                            <span class="product-badge volt">BESTSELLER</span>
+                            <span class="product-badge dark">280 GSM</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop"
+                            alt="Jay's Acid-Wash Heavyweight Pump Cover" class="lazy-load">
+                        <button class="wishlist-btn" aria-label="Add to wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Pump Cover / Drop-Shoulder</span>
+                        <h3 class="product-name">Jay's Acid-Wash Heavyweight Pump Cover</h3>
+                        <div class="size-chips">
+                            <span class="size-chip">S</span>
+                            <span class="size-chip">M</span>
+                            <span class="size-chip">L</span>
+                            <span class="size-chip">XL</span>
+                            <span class="size-chip">2XL</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <p class="product-price">GH₵ 350</p>
+                            <button class="add-to-cart-quick">+ Add To Bag</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 (User's Timberland Boot) -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge-wrap">
+                            <span class="product-badge orange">LIMITED CLOSET DROP</span>
+                            <span class="product-badge dark">WATERPROOF</span>
+                        </div>
+                        <img src="images/Mens-Timberland-x-Avirex-Premium-6Inch-Waterproof-Boot-TBL-ALT4.avif"
+                            alt="Mens Timberland x Avirex Premium 6-Inch Waterproof Boot" class="lazy-load">
+                        <button class="wishlist-btn" aria-label="Add to wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Footwear &amp; Streetwear Boots</span>
+                        <h3 class="product-name">Timberland × Avirex Premium 6" Boot</h3>
+                        <div class="size-chips">
+                            <span class="size-chip">41</span>
+                            <span class="size-chip">42</span>
+                            <span class="size-chip">43</span>
+                            <span class="size-chip">44</span>
+                            <span class="size-chip">45</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <p class="product-price">GH₵ 1,850</p>
+                            <button class="add-to-cart-quick">+ Add To Bag</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge-wrap">
+                            <span class="product-badge volt">NEW DROP</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1506152983158-b4a74a01c721?q=80&w=1000&auto=format&fit=crop"
+                            alt="Jay's Pro-Fit Seamless Long Sleeve Compression" class="lazy-load">
+                        <button class="wishlist-btn" aria-label="Add to wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ergonomic Muscle Compression</span>
+                        <h3 class="product-name">Jay's Pro-Fit Seamless Compression Long-Sleeve</h3>
+                        <div class="size-chips">
+                            <span class="size-chip">S</span>
+                            <span class="size-chip">M</span>
+                            <span class="size-chip">L</span>
+                            <span class="size-chip">XL</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <p class="product-price">GH₵ 380</p>
+                            <button class="add-to-cart-quick">+ Add To Bag</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge-wrap">
+                            <span class="product-badge dark">LEG DAY ESSENTIAL</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1000&auto=format&fit=crop"
+                            alt="Jay's 5 Inch Raw-Hem Gym Shorts" class="lazy-load">
+                        <button class="wishlist-btn" aria-label="Add to wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Athletic French Terry Shorts</span>
+                        <h3 class="product-name">Jay's 5" Raw-Hem Athletic Gym Shorts</h3>
+                        <div class="size-chips">
+                            <span class="size-chip">S</span>
+                            <span class="size-chip">M</span>
+                            <span class="size-chip">L</span>
+                            <span class="size-chip">XL</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <p class="product-price">GH₵ 300</p>
+                            <button class="add-to-cart-quick">+ Add To Bag</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge-wrap">
+                            <span class="product-badge volt">450 GSM</span>
+                            <span class="product-badge dark">HEAVYWEIGHT</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=1000&auto=format&fit=crop"
+                            alt="Jay's Boxy Oversized Fleece Hoodie" class="lazy-load">
+                        <button class="wishlist-btn" aria-label="Add to wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Streetwear Outerwear</span>
+                        <h3 class="product-name">Jay's Boxy Oversized Heavy Fleece Hoodie</h3>
+                        <div class="size-chips">
+                            <span class="size-chip">M</span>
+                            <span class="size-chip">L</span>
+                            <span class="size-chip">XL</span>
+                            <span class="size-chip">2XL</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <p class="product-price">GH₵ 520</p>
+                            <button class="add-to-cart-quick">+ Add To Bag</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge-wrap">
+                            <span class="product-badge orange">HOT</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop"
+                            alt="Jay's Deep-Cut Bodybuilding Stringer" class="lazy-load">
+                        <button class="wishlist-btn" aria-label="Add to wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ribbed Muscle Tank</span>
+                        <h3 class="product-name">Jay's Deep-Cut Ribbed Bodybuilding Stringer</h3>
+                        <div class="size-chips">
+                            <span class="size-chip">S</span>
+                            <span class="size-chip">M</span>
+                            <span class="size-chip">L</span>
+                            <span class="size-chip">XL</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <p class="product-price">GH₵ 260</p>
+                            <button class="add-to-cart-quick">+ Add To Bag</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge-wrap">
+                            <span class="product-badge volt">STREETWEAR</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=1000&auto=format&fit=crop"
+                            alt="Jay's Tactical Cargo Gym Joggers" class="lazy-load">
+                        <button class="wishlist-btn" aria-label="Add to wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Tapered Track Pants</span>
+                        <h3 class="product-name">Jay's Tactical Cargo Gym Joggers</h3>
+                        <div class="size-chips">
+                            <span class="size-chip">M</span>
+                            <span class="size-chip">L</span>
+                            <span class="size-chip">XL</span>
+                            <span class="size-chip">2XL</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <p class="product-price">GH₵ 440</p>
+                            <button class="add-to-cart-quick">+ Add To Bag</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge-wrap">
+                            <span class="product-badge dark">POWERLIFTING</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=1000&auto=format&fit=crop"
+                            alt="Jay's 10mm Quick-Release Lever Lifting Belt" class="lazy-load">
+                        <button class="wishlist-btn" aria-label="Add to wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Heavy Lifting Accessories</span>
+                        <h3 class="product-name">Jay's 10mm Quick-Release Suede Lever Belt</h3>
+                        <div class="size-chips">
+                            <span class="size-chip">S</span>
+                            <span class="size-chip">M</span>
+                            <span class="size-chip">L</span>
+                            <span class="size-chip">XL</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <p class="product-price">GH₵ 620</p>
+                            <button class="add-to-cart-quick">+ Add To Bag</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Editorial Story Section -->
+        <section class="editorial-section">
+            <div class="editorial-item">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2940&auto=format&fit=crop"
+                    alt="Jay's Gym Fits Athlete in Training" class="lazy-load">
+            </div>
+            <div class="editorial-item editorial-text">
+                <span class="editorial-badge">THE JAY'S STANDARD</span>
+                <h2>BUILT BY LIFTERS, TAILORED FOR THE CULTURE</h2>
+                <p>Jay's Gym Fits fuses elite gym discipline with high-end Accra streetwear closet style. From heavy deadlifts to everyday Accra street style, every single garment is constructed with dropped shoulders, tapered waistlines, and high-tenacity reinforced stitching that accentuates your physique.</p>
+                <a href="shop.html" class="cta-button primary">EXPLORE ALL FITS <span>&rarr;</span></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <h2>JAY'S <span class="logo-accent">GYM FITS</span></h2>
+                <p>The premier men's athletic wear & streetwear closet in Ghana. Quality drops engineered for lifters, athletes, and modern urban tastemakers.</p>
+                <div class="footer-location-box">
+                    <strong>📍 Physical Boutique & Pickups:</strong>
+                    Madina / Adenta West, Greater Accra Region, Ghana<br>
+                    <strong>📞 Direct WhatsApp & Orders:</strong> 0545747166 (+233 54 574 7166)
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>COLLECTIONS</h3>
+                <ul>
+                    <li><a href="shop.html?category=pump-covers">Oversized Pump Covers</a></li>
+                    <li><a href="shop.html?category=compression">Muscle Compression</a></li>
+                    <li><a href="shop.html?category=shorts">5" Gym Shorts</a></li>
+                    <li><a href="shop.html?category=hoodies">Heavyweight Hoodies</a></li>
+                    <li><a href="shop.html?category=footwear">Timberlands & Boots</a></li>
+                    <li><a href="shop.html?category=accessories">Lifting Belts & Wraps</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SUPPORT &amp; ACCRA</h3>
+                <ul>
+                    <li><a href="#">Size &amp; Fit Guide</a></li>
+                    <li><a href="#">Doorstep Accra Delivery</a></li>
+                    <li><a href="#">Kumasi &amp; Nationwide Rates</a></li>
+                    <li><a href="https://wa.me/233545747166" target="_blank" rel="noopener">WhatsApp Direct: 0545747166</a></li>
+                    <li><a href="#">Exchanges &amp; Returns</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>CONNECT</h3>
+                <ul>
+                    <li><a href="#">Instagram @JaysGymFits</a></li>
+                    <li><a href="#">TikTok @JaysGymFits</a></li>
+                    <li><a href="https://wa.me/233545747166" target="_blank" rel="noopener">WhatsApp Jay (+233 54 574 7166)</a></li>
+                    <li><a href="#">Facebook / JaysGymFits</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jay's Gym Fits. All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#">Store Locator</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Boutique CTA -->
+    <a href="https://wa.me/233545747166?text=Hello%20Jay%2C%20I%20would%20like%20to%20order%20from%20Jay%27s%20Gym%20Fits" 
+       target="_blank" rel="noopener" class="whatsapp-float-btn" aria-label="Text Jay on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span>Text Jay on WhatsApp</span>
+    </a>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <button class="close-search" aria-label="Close search">&times;</button>
+        <div class="search-overlay-content">
+            <input type="text" class="search-overlay-input" placeholder="SEARCH JAY'S GYM FITS...">
+        </div>
+    </div>
+
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Account Panel -->
+    <div id="account-panel" class="side-panel">
+        <div class="panel-header">
+            <h3>Jay's Member Club</h3>
+            <button class="close-panel" aria-label="Close panel">&times;</button>
+        </div>
+        <div class="panel-content">
+            <form class="login-form">
+                <h4>ATHLETE SIGN IN</h4>
+                <input type="email" placeholder="Email Address" required autocomplete="email">
+                <input type="password" placeholder="Password" required autocomplete="current-password">
+                <button type="submit" class="cta-button dark">SIGN IN</button>
+                <a href="#" class="form-link">Forgot your password?</a>
+            </form>
+
+            <div class="form-divider-container">
+                <span class="form-divider-line"></span>
+                <span class="form-divider-text">OR CONTINUE WITH</span>
+                <span class="form-divider-line"></span>
+            </div>
+
+            <button class="google-btn">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48">
+                    <g>
+                        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                        <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.42-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                        <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+                        <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                        <path fill="none" d="M0 0h48v48H0z"></path>
+                    </g>
+                </svg>
+                <span>Sign in with Google</span>
+            </button>
+
+            <div class="create-account-section">
+                <p>New to Jay's Gym Fits?</p>
+                <a href="#" class="cta-button outline">Create Athlete Account</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Panel -->
+    <div id="cart-panel" class="side-panel">
+        <div class="panel-header">
+            <h3>Your Bag</h3>
+            <button class="close-panel" aria-label="Close panel">&times;</button>
+        </div>
+        <div class="panel-content">
+            <div class="cart-items">
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=200" alt="Jay's Heavyweight Pump Cover">
+                    <div class="cart-item-info">
+                        <p class="cart-item-name">JAY'S ACID-WASH PUMP COVER</p>
+                        <p class="cart-item-price">GH₵ 350</p>
+                        <p class="cart-item-details">Size: XL / Color: Vintage Washed Black</p>
+                    </div>
+                </div>
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <img src="images/Mens-Timberland-x-Avirex-Premium-6Inch-Waterproof-Boot-TBL-ALT4.avif" alt="Timberland x Avirex Boot">
+                    <div class="cart-item-info">
+                        <p class="cart-item-name">TIMBERLAND × AVIREX 6" BOOT</p>
+                        <p class="cart-item-price">GH₵ 1,850</p>
+                        <p class="cart-item-details">Size: 43 / Color: Wheat Nubuck</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span>GH₵ 2,200</span>
+            </div>
+            <a href="#" class="cta-button dark">Checkout &amp; Order (GH₵ 2,200)</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

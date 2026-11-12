@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RouteWise Travels - Premier intercity bus booking and exciting tourist adventure tours across Ghana. Experience fun, outdooring, canopy walks, waterfalls, wildlife safaris, and beach getaways with executive comfort.">
+  <meta name="keywords" content="ghana tourist sites, kakum canopy walk, boti falls, wli falls, mole national park, akosombo lake cruise, outdooring ghana, bus booking ghana, weekend getaways">
+  <title>RouteWise Travels | Intercity Coaches &amp; Ghana Adventure Tours</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Academic Demonstration Banner -->
+  <div class="demo-top-bar" id="demoBanner">
+    <div class="container demo-bar-content">
+      <span class="demo-badge">University Project</span>
+      <p class="demo-text">
+        <strong>Academic Demonstration:</strong> RouteWise Travels &amp; Adventure Tours is a front-end simulation. No real bookings, payments, or database operations are executed.
+      </p>
+      <button type="button" class="demo-dismiss-btn" id="dismissDemoBanner" aria-label="Dismiss banner">&times;</button>
+    </div>
+  </div>
+
+  <!-- Header & Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="RouteWise Travels Home">
+        <div class="logo-icon-wrap">
+          <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#144233"/>
+            <path d="M7 11C7 9.34315 8.34315 8 10 8H22C23.6569 8 25 9.34315 25 11V21C25 22.1046 24.1046 23 23 23H9C7.89543 23 7 22.1046 7 21V11Z" fill="#D4AF37"/>
+            <path d="M9 11H23V15H9V11Z" fill="#0D281E"/>
+            <circle cx="11.5" cy="19.5" r="1.5" fill="#FFFFFF"/>
+            <circle cx="20.5" cy="19.5" r="1.5" fill="#FFFFFF"/>
+            <path d="M10 23V25" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
+            <path d="M22 23V25" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">RouteWise<span class="brand-gold">Travels</span></span>
+          <span class="brand-tagline">Intercity &amp; Tourist Adventures</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-navigation" aria-label="Primary Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#adventure-tours" class="nav-link nav-highlight">🌴 Fun &amp; Outdooring</a></li>
+          <li><a href="#destinations" class="nav-link">Destinations</a></li>
+          <li><a href="#search-section" class="nav-link">Book a Trip</a></li>
+          <li><a href="#trips-results" class="nav-link">Available Trips</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action & Mobile Menu Toggle -->
+      <div class="header-actions">
+        <a href="#adventure-tours" class="btn btn-gold btn-header-cta">Explore Tours</a>
+        <button type="button" class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-drawer-overlay" id="mobileOverlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <span class="brand-name">RouteWise<span class="brand-gold">Travels</span></span>
+      </div>
+      <button type="button" class="drawer-close-btn" id="closeDrawerBtn" aria-label="Close navigation menu">&times;</button>
+    </div>
+    <ul class="drawer-nav-links">
+      <li><a href="#home" class="drawer-link">Home</a></li>
+      <li><a href="#adventure-tours" class="drawer-link drawer-highlight">🌴 Fun &amp; Outdooring Tours</a></li>
+      <li><a href="#destinations" class="drawer-link">Popular Intercity Routes</a></li>
+      <li><a href="#search-section" class="drawer-link">Book a Trip / Tour</a></li>
+      <li><a href="#trips-results" class="drawer-link">Available Schedules</a></li>
+      <li><a href="#about" class="drawer-link">About Us</a></li>
+      <li><a href="#contact" class="drawer-link">Contact &amp; Terminals</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="#adventure-tours" class="btn btn-gold btn-block drawer-cta">View Tourist Packages</a>
+      <p class="drawer-contact-hint">Tour Desk: +233 (0) 30 200 4880</p>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Ghana's Premier Travel &amp; Adventure Experience
+          </div>
+          <h1 class="hero-title">Your Journey, Our Priority.</h1>
+          <p class="hero-subtitle">
+            Unleash the excitement of travel across Ghana! Whether you need prompt intercity executive coaches or unforgettable weekend outdooring trips—from Kakum's exhilarating canopy walks and Boti's cascading waterfalls to Lake Volta cruises and Mole wildlife safaris—we make every trip extraordinary.
+          </p>
+          <div class="hero-highlights">
+            <span class="highlight-chip">
+              <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Tourist Outdooring &amp; Canopy Walks
+            </span>
+            <span class="highlight-chip">
+              <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Waterfall Hikes &amp; Beach Bonfires
+            </span>
+            <span class="highlight-chip">
+              <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              VIP Air-Conditioned Fleet with Wi-Fi
+            </span>
+          </div>
+
+          <div class="hero-cta-buttons">
+            <a href="#adventure-tours" class="btn btn-gold btn-lg">
+              🌴 View Tourist &amp; Fun Packages
+            </a>
+            <a href="#search-section" class="btn btn-outline-light btn-lg">
+              🚌 Book Intercity Coach
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trip Search Form Section with Mode Switcher -->
+    <section class="search-section" id="search-section" aria-labelledby="search-heading">
+      <div class="container">
+        <div class="search-card">
+          
+          <!-- Mode Switcher Tabs: Intercity vs Tourist Escapes -->
+          <div class="search-mode-tabs" role="tablist">
+            <button type="button" class="mode-tab active" id="tabIntercity" role="tab" aria-selected="true" data-mode="intercity">
+              <span class="tab-icon">🚌</span>
+              <span class="tab-text">Intercity Bus Booking</span>
+            </button>
+            <button type="button" class="mode-tab" id="tabTourist" role="tab" aria-selected="false" data-mode="tourist">
+              <span class="tab-icon">🌴</span>
+              <span class="tab-text">Ghana Tourist Sites &amp; Fun Outings</span>
+              <span class="tab-badge">Hot</span>
+            </button>
+          </div>
+
+          <div class="search-card-header">
+            <div>
+              <h2 id="search-heading" class="search-card-title">Book Your Bus Ticket or Adventure Tour</h2>
+              <p class="search-card-desc" id="searchDescText">Select your departure point, destination, date, and passenger count</p>
+            </div>
+            <div class="currency-tag">
+              <span>All fares in <strong>Ghana Cedis (GH₵)</strong></span>
+            </div>
+          </div>
+
+          <form id="tripSearchForm" class="search-form" novalidate>
+            <div class="form-grid">
+              
+              <!-- Departure City -->
+              <div class="form-group form-group-location">
+                <label for="departureCity" class="form-label">
+                  <span class="label-icon">📍</span> Departure City
+                </label>
+                <div class="select-wrapper">
+                  <select id="departureCity" name="departureCity" class="form-control" required>
+                    <option value="" disabled>Select origin city</option>
+                    <option value="Accra" selected>Accra (Circle VIP / Kaneshie / Accra Mall)</option>
+                    <option value="Kumasi">Kumasi (Asafo / Kejetia)</option>
+                    <option value="Cape Coast">Cape Coast (Pedu Junction)</option>
+                    <option value="Takoradi">Takoradi (Market Circle)</option>
+                    <option value="Tamale">Tamale (Central Lorry Park)</option>
+                    <option value="Sunyani">Sunyani (Main Station)</option>
+                    <option value="Ho">Ho (Central Terminal)</option>
+                    <option value="Koforidua">Koforidua (Main Station)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Swap Button -->
+              <div class="swap-btn-container">
+                <button type="button" id="swapCitiesBtn" class="btn-swap" title="Swap departure and destination" aria-label="Swap departure and destination cities">
+                  <svg class="swap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="17 1 21 5 17 9"></polyline>
+                    <path d="M3 5h18"></path>
+                    <polyline points="7 23 3 19 7 15"></polyline>
+                    <path d="M21 19H3"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Destination City / Tourist Destination -->
+              <div class="form-group form-group-location">
+                <label for="destinationCity" class="form-label" id="destinationLabel">
+                  <span class="label-icon">🏁</span> Destination City
+                </label>
+                <div class="select-wrapper">
+                  <select id="destinationCity" name="destinationCity" class="form-control" required>
+                    <!-- Options populated and adjusted dynamically via JS -->
+                    <option value="" disabled>Select destination</option>
+                    <option value="Kumasi" selected>Kumasi (Asafo / Kejetia)</option>
+                    <option value="Accra">Accra (Circle VIP / Kaneshie)</option>
+                    <option value="Cape Coast">Cape Coast (Pedu Junction)</option>
+                    <option value="Takoradi">Takoradi (Market Circle)</option>
+                    <option value="Tamale">Tamale (Central Lorry Park)</option>
+                    <option value="Sunyani">Sunyani (Main Station)</option>
+                    <option value="Ho">Ho (Central Terminal)</option>
+                    <option value="Koforidua">Koforidua (Main Station)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Travel Date -->
+              <div class="form-group">
+                <label for="travelDate" class="form-label">
+                  <span class="label-icon">📅</span> Travel Date
+                </label>
+                <input type="date" id="travelDate" name="travelDate" class="form-control" required>
+              </div>
+
+              <!-- Number of Passengers -->
+              <div class="form-group">
+                <label for="passengerCount" class="form-label">
+                  <span class="label-icon">👥</span> Travelers
+                </label>
+                <div class="select-wrapper">
+                  <select id="passengerCount" name="passengerCount" class="form-control">
+                    <option value="1" selected>1 Person</option>
+                    <option value="2">2 Persons (Couple / Friends)</option>
+                    <option value="3">3 Persons (Mini Group)</option>
+                    <option value="4">4 Persons (Squad Package)</option>
+                    <option value="5">5 Persons (Squad Package)</option>
+                    <option value="6">6+ Persons (Outdooring Crew)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Search Button -->
+              <div class="form-group form-group-btn">
+                <button type="submit" id="searchSubmitBtn" class="btn btn-gold btn-block btn-search">
+                  <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+                  </svg>
+                  Find Trips
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Validation alert box -->
+            <div id="searchErrorNotice" class="search-alert hidden" role="alert" aria-live="assertive"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW SECTION: Exciting Ghana Tourist Sites & Outdooring Tour Packages -->
+    <section class="adventure-tours-section" id="adventure-tours">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag section-tag-gold">🌴 Excitement &amp; Fun Escapes</span>
+          <h2 class="section-title">Discover Ghana: Outdooring, Nature &amp; Fun Tours</h2>
+          <p class="section-subtitle">
+            Trade the city stress for unforgettable excitement! Join our curated weekend adventures featuring canopy walks, waterfall dips, boat cruises, beach bonfires, and wildlife safaris. Everything included: executive bus transport, site tickets, certified guides, and delicious local food.
+          </p>
+        </div>
+
+        <!-- Tour Category Filter Pills -->
+        <div class="tours-filter-container">
+          <button type="button" class="tour-filter-pill active" data-category="all">✨ All Adventures</button>
+          <button type="button" class="tour-filter-pill" data-category="waterfall">🌊 Waterfalls &amp; Hikes</button>
+          <button type="button" class="tour-filter-pill" data-category="beach">🏖️ Beach &amp; Outdooring</button>
+          <button type="button" class="tour-filter-pill" data-category="wildlife">🐘 Wildlife Safaris</button>
+          <button type="button" class="tour-filter-pill" data-category="cruise">⛵ Lake Cruise &amp; Chill</button>
+        </div>
+
+        <!-- Tourist Adventure Cards Grid -->
+        <div class="tours-grid" id="toursGrid">
+          
+          <!-- Tour 1: Kakum Canopy Walk & Beach Chill -->
+          <article class="tour-card" data-category="beach" data-tour-id="kakum-adventure">
+            <div class="tour-img-wrap">
+              <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80" alt="Kakum Rainforest canopy walk and beach outdooring in Ghana" class="tour-img" loading="lazy">
+              <span class="tour-badge badge-bestseller">🔥 Top Bestseller</span>
+              <span class="tour-region-tag">Central Region</span>
+            </div>
+            <div class="tour-body">
+              <div class="tour-header-row">
+                <h3 class="tour-title">Kakum Canopy Walk &amp; Brenu Beach Party</h3>
+                <div class="tour-price-box">
+                  <span class="price-prefix">From</span>
+                  <strong class="tour-price">GH₵ 220</strong>
+                  <span class="price-suffix">/ person</span>
+                </div>
+              </div>
+              <p class="tour-desc">
+                Walk 40 meters above the virgin rainforest on West Africa's most famous suspended canopy walkways, then unwind with beach games, coconut water, and a live DJ bonfire at Brenu beach.
+              </p>
+              
+              <div class="tour-highlights-box">
+                <span class="highlight-item">🌲 7-bridge Canopy Walk</span>
+                <span class="highlight-item">🏖️ Beach Volleyball &amp; Games</span>
+                <span class="highlight-item">🍗 Grilled Chicken &amp; Jollof Lunch</span>
+                <span class="highlight-item">🚌 Executive Return AC Bus</span>
+              </div>
+
+              <div class="tour-meta-row">
+                <span class="tour-duration">⏱️ Full-Day Trip (Departs 06:00 AM)</span>
+                <span class="tour-spots">⚡ 8 Slots Left for Saturday</span>
+              </div>
+
+              <button type="button" class="btn btn-gold btn-block book-tour-btn" data-tour-title="Kakum Canopy Walk & Brenu Beach Party" data-tour-price="220" data-origin="Accra" data-destination="Cape Coast" data-type="adventure">
+                Book This Adventure
+              </button>
+            </div>
+          </article>
+
+          <!-- Tour 2: Boti Waterfalls, Umbrella Rock & 3-Headed Palm Tree -->
+          <article class="tour-card" data-category="waterfall" data-tour-id="boti-falls-hike">
+            <div class="tour-img-wrap">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Boti Falls and hiking trails in Eastern Region Ghana" class="tour-img" loading="lazy">
+              <span class="tour-badge badge-adventure">🧗 Outdooring &amp; Hike</span>
+              <span class="tour-region-tag">Eastern Region</span>
+            </div>
+            <div class="tour-body">
+              <div class="tour-header-row">
+                <h3 class="tour-title">Boti Falls, Umbrella Rock &amp; Forest Hike</h3>
+                <div class="tour-price-box">
+                  <span class="price-prefix">From</span>
+                  <strong class="tour-price">GH₵ 180</strong>
+                  <span class="price-suffix">/ person</span>
+                </div>
+              </div>
+              <p class="tour-desc">
+                Witness the mystical twin waterfalls, hike up through the verdant forest to the iconic natural Umbrella Rock formation, view the 3-headed palm tree, and cool off in the freshwater spray.
+              </p>
+
+              <div class="tour-highlights-box">
+                <span class="highlight-item">🌊 Twin Waterfall Plunge</span>
+                <span class="highlight-item">🪨 Umbrella Rock Scenic Lookout</span>
+                <span class="highlight-item">🌴 Mystery 3-Headed Palm Tree</span>
+                <span class="highlight-item">🧺 Picnic &amp; Bus Board Games</span>
+              </div>
+
+              <div class="tour-meta-row">
+                <span class="tour-duration">⏱️ 1-Day Fun Outing (Departs 06:30 AM)</span>
+                <span class="tour-spots">⚡ 12 Slots Left</span>
+              </div>
+
+              <button type="button" class="btn btn-gold btn-block book-tour-btn" data-tour-title="Boti Falls, Umbrella Rock & Forest Hike" data-tour-price="180" data-origin="Accra" data-destination="Koforidua" data-type="adventure">
+                Book This Adventure
+              </button>
+            </div>
+          </article>
+
+          <!-- Tour 3: Wli Waterfalls & Mount Afadjato Climb -->
+          <article class="tour-card" data-category="waterfall" data-tour-id="wli-afadjato-weekend">
+            <div class="tour-img-wrap">
+              <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80" alt="Wli waterfalls and mountainous landscape in Volta Region" class="tour-img" loading="lazy">
+              <span class="tour-badge badge-weekend">⛰️ 2-Day Getaway</span>
+              <span class="tour-region-tag">Volta Region</span>
+            </div>
+            <div class="tour-body">
+              <div class="tour-header-row">
+                <h3 class="tour-title">Wli Waterfalls &amp; Mount Afadjato Summit</h3>
+                <div class="tour-price-box">
+                  <span class="price-prefix">From</span>
+                  <strong class="tour-price">GH₵ 480</strong>
+                  <span class="price-suffix">/ person</span>
+                </div>
+              </div>
+              <p class="tour-desc">
+                Tackle the thrilling climb up Ghana's highest peak at Mount Afadjato for breathtaking valley views, swim in the pools of West Africa's tallest waterfall at Wli, and enjoy an evening campfire.
+              </p>
+
+              <div class="tour-highlights-box">
+                <span class="highlight-item">🏔️ Afadjato Peak Conquest</span>
+                <span class="highlight-item">💦 Wli Upper &amp; Lower Falls Swim</span>
+                <span class="highlight-item">🏡 Cozy Mountain Eco-Lodge Stay</span>
+                <span class="highlight-item">🔥 Campfire, BBQ &amp; Palm Wine</span>
+              </div>
+
+              <div class="tour-meta-row">
+                <span class="tour-duration">⏱️ 2 Days / 1 Night Weekend Trip</span>
+                <span class="tour-spots">⚡ Limited to 20 Travelers</span>
+              </div>
+
+              <button type="button" class="btn btn-gold btn-block book-tour-btn" data-tour-title="Wli Waterfalls & Mount Afadjato Summit" data-tour-price="480" data-origin="Accra" data-destination="Ho" data-type="adventure">
+                Book This Adventure
+              </button>
+            </div>
+          </article>
+
+          <!-- Tour 4: Lake Volta Cruise & Akosombo Day Party -->
+          <article class="tour-card" data-category="cruise" data-tour-id="lake-volta-cruise">
+            <div class="tour-img-wrap">
+              <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=800&q=80" alt="Boat cruise on Lake Volta and resort chilling at Akosombo" class="tour-img" loading="lazy">
+              <span class="tour-badge badge-luxury">🥂 Luxury &amp; Chill</span>
+              <span class="tour-region-tag">Akosombo Basin</span>
+            </div>
+            <div class="tour-body">
+              <div class="tour-header-row">
+                <h3 class="tour-title">Lake Volta Boat Cruise &amp; Akosombo Chill</h3>
+                <div class="tour-price-box">
+                  <span class="price-prefix">From</span>
+                  <strong class="tour-price">GH₵ 290</strong>
+                  <span class="price-suffix">/ person</span>
+                </div>
+              </div>
+              <p class="tour-desc">
+                Board a scenic pontoon cruise across majestic Lake Volta with an open-deck Afrobeat DJ, enjoy a lavish poolside buffet lunch at an Akosombo resort, and take in the massive Akosombo Dam viewpoint.
+              </p>
+
+              <div class="tour-highlights-box">
+                <span class="highlight-item">🚢 2-Hour Lake Volta Boat Cruise</span>
+                <span class="highlight-item">🍽️ Resort Poolside Buffet &amp; Drinks</span>
+                <span class="highlight-item">🎶 Onboard Live DJ &amp; Karaoke</span>
+                <span class="highlight-item">🌊 Akosombo Dam Historic Viewpoint</span>
+              </div>
+
+              <div class="tour-meta-row">
+                <span class="tour-duration">⏱️ Sunday Special Outdooring</span>
+                <span class="tour-spots">⚡ 15 Slots Left</span>
+              </div>
+
+              <button type="button" class="btn btn-gold btn-block book-tour-btn" data-tour-title="Lake Volta Boat Cruise & Akosombo Chill" data-tour-price="290" data-origin="Accra" data-destination="Akosombo" data-type="adventure">
+                Book This Adventure
+              </button>
+            </div>
+          </article>
+
+          <!-- Tour 5: Mole National Park & Larabanga Safari -->
+          <article class="tour-card" data-category="wildlife" data-tour-id="mole-safari">
+            <div class="tour-img-wrap">
+              <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80" alt="Wildlife safari with elephants at Mole National Park Ghana" class="tour-img" loading="lazy">
+              <span class="tour-badge badge-safari">🐘 Safari Expedition</span>
+              <span class="tour-region-tag">Savannah Region</span>
+            </div>
+            <div class="tour-body">
+              <div class="tour-header-row">
+                <h3 class="tour-title">Mole National Park Safari &amp; Larabanga</h3>
+                <div class="tour-price-box">
+                  <span class="price-prefix">From</span>
+                  <strong class="tour-price">GH₵ 850</strong>
+                  <span class="price-suffix">/ person</span>
+                </div>
+              </div>
+              <p class="tour-desc">
+                An epic bucket-list journey! Experience walking and 4x4 Jeep safaris alongside wild forest elephants, baboons, and antelopes, swim at the scenic Mole Motel ridge pool, and visit the 1421 AD Larabanga Mud Mosque.
+              </p>
+
+              <div class="tour-highlights-box">
+                <span class="highlight-item">🐘 Walking Safari with Wild Elephants</span>
+                <span class="highlight-item">🚙 4x4 Open-Roof Jeep Game Drive</span>
+                <span class="highlight-item">🕌 600-Year-Old Larabanga Mosque</span>
+                <span class="highlight-item">🛏️ 2 Nights Park Chalet &amp; Meals</span>
+              </div>
+
+              <div class="tour-meta-row">
+                <span class="tour-duration">⏱️ 3 Days / 2 Nights Long Tour</span>
+                <span class="tour-spots">⚡ 6 Slots Remaining</span>
+              </div>
+
+              <button type="button" class="btn btn-gold btn-block book-tour-btn" data-tour-title="Mole National Park Safari & Larabanga" data-tour-price="850" data-origin="Accra" data-destination="Tamale" data-type="adventure">
+                Book This Adventure
+              </button>
+            </div>
+          </article>
+
+          <!-- Tour 6: Shai Hills Wildlife & Cave Climbing -->
+          <article class="tour-card" data-category="wildlife" data-tour-id="shai-hills">
+            <div class="tour-img-wrap">
+              <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80" alt="Baboons, ostriches and rock caves at Shai Hills Reserve" class="tour-img" loading="lazy">
+              <span class="tour-badge badge-daytrip">🐒 1-Day Outdooring</span>
+              <span class="tour-region-tag">Greater Accra</span>
+            </div>
+            <div class="tour-body">
+              <div class="tour-header-row">
+                <h3 class="tour-title">Shai Hills Wildlife Reserve &amp; Cave Exploration</h3>
+                <div class="tour-price-box">
+                  <span class="price-prefix">From</span>
+                  <strong class="tour-price">GH₵ 160</strong>
+                  <span class="price-suffix">/ person</span>
+                </div>
+              </div>
+              <p class="tour-desc">
+                Just 45 minutes from Accra! Encounter playful baboon troops, ostriches, and zebras, hike up to the ancestral Shai caves used by historical warrior kings, and enjoy an outdooring bush barbecue.
+              </p>
+
+              <div class="tour-highlights-box">
+                <span class="highlight-item">🦘 Baboon Troops &amp; Zebras Sighting</span>
+                <span class="highlight-item">⛰️ Ancient Ancestral Cave Climb</span>
+                <span class="highlight-item">🎯 Archery &amp; Quad Bike Fun</span>
+                <span class="highlight-item">🍖 Bush BBQ Lunch &amp; Fresh Coconuts</span>
+              </div>
+
+              <div class="tour-meta-row">
+                <span class="tour-duration">⏱️ Half-Day Express (07:30 AM - 03:00 PM)</span>
+                <span class="tour-spots">⚡ Ideal for Groups &amp; Squads</span>
+              </div>
+
+              <button type="button" class="btn btn-gold btn-block book-tour-btn" data-tour-title="Shai Hills Wildlife Reserve & Cave Exploration" data-tour-price="160" data-origin="Accra" data-destination="Shai Hills" data-type="adventure">
+                Book This Adventure
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Group / Outdooring Promo Banner -->
+        <div class="outdooring-banner">
+          <div class="banner-content">
+            <span class="banner-badge">🎉 Squads, Churches &amp; Campus Outings</span>
+            <h3 class="banner-title">Planning a Group Outdooring or Birthday Trip?</h3>
+            <p class="banner-text">
+              We provide private custom luxury coach charters for student unions, church fellowships, office retreats, and birthday squads. Enjoy special group discounts, customizable picnic stops, and dedicated tour marshals!
+            </p>
+          </div>
+          <div class="banner-action">
+            <a href="#contact" class="btn btn-gold btn-lg">Request Group Charter</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Popular Routes Section -->
+    <section class="popular-routes-section" id="destinations">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Featured Destinations</span>
+          <h2 class="section-title">Popular Intercity Routes Across Ghana</h2>
+          <p class="section-subtitle">
+            Frequent daily express coaches connecting our major cities. Choose a route below to instantly view available trip schedules and fares.
+          </p>
+        </div>
+
+        <div class="routes-grid">
+          
+          <!-- Route 1: Accra to Cape Coast -->
+          <article class="route-card" data-origin="Accra" data-destination="Cape Coast">
+            <div class="route-image-wrap">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" alt="Scenic coastal highway to Cape Coast" class="route-img" loading="lazy">
+              <span class="route-badge">Scenic Heritage Route</span>
+            </div>
+            <div class="route-card-body">
+              <div class="route-header-flex">
+                <h3 class="route-name">Accra <span class="arrow-gold">→</span> Cape Coast</h3>
+                <span class="fare-tag">From <strong>GH₵ 95</strong></span>
+              </div>
+              <p class="route-desc">Travel comfortably along the Atlantic coast to historic Cape Coast Castle and Kakum National Park.</p>
+              <div class="route-meta-list">
+                <div class="route-meta-item">
+                  <span class="meta-icon">⏱️</span>
+                  <span>Est. 3 hrs 15 mins</span>
+                </div>
+                <div class="route-meta-item">
+                  <span class="meta-icon">🚌</span>
+                  <span>6 Daily Departures</span>
+                </div>
+                <div class="route-meta-item">
+                  <span class="meta-icon">📶</span>
+                  <span>AC, Wi-Fi &amp; USB</span>
+                </div>
+              </div>
+              <button type="button" class="btn btn-outline-emerald btn-block quick-route-btn" data-origin="Accra" data-destination="Cape Coast">
+                Select Route &amp; View Trips
+              </button>
+            </div>
+          </article>
+
+          <!-- Route 2: Accra to Kumasi -->
+          <article class="route-card" data-origin="Accra" data-destination="Kumasi">
+            <div class="route-image-wrap">
+              <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=700&q=80" alt="Modern executive coach heading to Kumasi" class="route-img" loading="lazy">
+              <span class="route-badge popular-badge">Most Frequent</span>
+            </div>
+            <div class="route-card-body">
+              <div class="route-header-flex">
+                <h3 class="route-name">Accra <span class="arrow-gold">→</span> Kumasi</h3>
+                <span class="fare-tag">From <strong>GH₵ 130</strong></span>
+              </div>
+              <p class="route-desc">Direct executive service to the Garden City and Ashanti Kingdom commercial heartland with zero midway stops.</p>
+              <div class="route-meta-list">
+                <div class="route-meta-item">
+                  <span class="meta-icon">⏱️</span>
+                  <span>Est. 4 hrs 30 mins</span>
+                </div>
+                <div class="route-meta-item">
+                  <span class="meta-icon">🚌</span>
+                  <span>10 Daily Departures</span>
+                </div>
+                <div class="route-meta-item">
+                  <span class="meta-icon">💺</span>
+                  <span>VIP Reclining Seats</span>
+                </div>
+              </div>
+              <button type="button" class="btn btn-outline-emerald btn-block quick-route-btn" data-origin="Accra" data-destination="Kumasi">
+                Select Route &amp; View Trips
+              </button>
+            </div>
+          </article>
+
+          <!-- Route 3: Accra to Takoradi -->
+          <article class="route-card" data-origin="Accra" data-destination="Takoradi">
+            <div class="route-image-wrap">
+              <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=700&q=80" alt="Executive bus on western corridor to Takoradi" class="route-img" loading="lazy">
+              <span class="route-badge">Oil City Express</span>
+            </div>
+            <div class="route-card-body">
+              <div class="route-header-flex">
+                <h3 class="route-name">Accra <span class="arrow-gold">→</span> Takoradi</h3>
+                <span class="fare-tag">From <strong>GH₵ 115</strong></span>
+              </div>
+              <p class="route-desc">Fast, smooth coastal transit connecting Ghana's capital to the industrial harbor and golden western beaches.</p>
+              <div class="route-meta-list">
+                <div class="route-meta-item">
+                  <span class="meta-icon">⏱️</span>
+                  <span>Est. 4 hrs 00 mins</span>
+                </div>
+                <div class="route-meta-item">
+                  <span class="meta-icon">🚌</span>
+                  <span>5 Daily Departures</span>
+                </div>
+                <div class="route-meta-item">
+                  <span class="meta-icon">☕</span>
+                  <span>Complimentary Drink</span>
+                </div>
+              </div>
+              <button type="button" class="btn btn-outline-emerald btn-block quick-route-btn" data-origin="Accra" data-destination="Takoradi">
+                Select Route &amp; View Trips
+              </button>
+            </div>
+          </article>
+
+          <!-- Route 4: Accra to Tamale -->
+          <article class="route-card" data-origin="Accra" data-destination="Tamale">
+            <div class="route-image-wrap">
+              <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80" alt="Northern savannah corridor to Tamale" class="route-img" loading="lazy">
+              <span class="route-badge">Long Distance Luxury</span>
+            </div>
+            <div class="route-card-body">
+              <div class="route-header-flex">
+                <h3 class="route-name">Accra <span class="arrow-gold">→</span> Tamale</h3>
+                <span class="fare-tag">From <strong>GH₵ 260</strong></span>
+              </div>
+              <p class="route-desc">First-class sleeper &amp; semi-sleeper coach journey across the Volta basin to the Northern regional capital.</p>
+              <div class="route-meta-list">
+                <div class="route-meta-item">
+                  <span class="meta-icon">⏱️</span>
+                  <span>Est. 11 hrs 00 mins</span>
+                </div>
+                <div class="route-meta-item">
+                  <span class="meta-icon">🚌</span>
+                  <span>3 Daily Departures</span>
+                </div>
+                <div class="route-meta-item">
+                  <span class="meta-icon">🛌</span>
+                  <span>Full Comfort Rest Stops</span>
+                </div>
+              </div>
+              <button type="button" class="btn btn-outline-emerald btn-block quick-route-btn" data-origin="Accra" data-destination="Tamale">
+                Select Route &amp; View Trips
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Available Trips Section -->
+    <section class="trips-section" id="trips-results">
+      <div class="container">
+        
+        <!-- Active Search Summary Bar -->
+        <div class="results-header-box">
+          <div class="results-title-group">
+            <span class="section-tag" id="resultsSectionTag">Search Results</span>
+            <h2 class="results-heading" id="resultsHeading">Available Trips: Accra to Kumasi</h2>
+            <p class="results-subtext" id="resultsSubtext">
+              Showing scheduled coach departures for today. Fares calculated for 1 passenger.
+            </p>
+          </div>
+          <div class="results-meta-pill">
+            <span class="pill-label">Selected Travelers:</span>
+            <span class="pill-value" id="activePassengerCountBadge">1 Person</span>
+          </div>
+        </div>
+
+        <!-- Filter / Filter Pills Bar -->
+        <div class="results-filters-bar">
+          <div class="filter-group-buttons">
+            <span class="filter-label">Filter by Departure:</span>
+            <button type="button" class="filter-pill active" data-time-filter="all">All Times</button>
+            <button type="button" class="filter-pill" data-time-filter="morning">Morning (05:00 - 11:59)</button>
+            <button type="button" class="filter-pill" data-time-filter="afternoon">Afternoon (12:00 - 16:59)</button>
+            <button type="button" class="filter-pill" data-time-filter="evening">Evening (17:00+)</button>
+          </div>
+          <div class="results-counter">
+            <span id="tripsCountText">Loading trips...</span>
+          </div>
+        </div>
+
+        <!-- Trips List Container -->
+        <div class="trips-container" id="tripsContainer" aria-live="polite">
+          <!-- Dynamic trip cards will be inserted here by script.js -->
+        </div>
+
+        <!-- Empty state message (hidden by default) -->
+        <div class="no-trips-state hidden" id="noTripsState">
+          <div class="no-trips-icon">🚌</div>
+          <h3>No Direct Trips Found for this Route</h3>
+          <p>We couldn't find scheduled departures matching your exact filters. Please try another travel date or select one of our popular routes.</p>
+          <button type="button" class="btn btn-emerald" id="resetSearchBtn">Reset to Accra → Kumasi</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Why Choose RouteWise Travels (Service Pillars) -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">The RouteWise Standard</span>
+          <h2 class="section-title">Designed for Comfort &amp; Adventure</h2>
+          <p class="section-subtitle">
+            Whether you are commuting for business or heading out for a weekend waterfall adventure with friends, we elevate your journey with safety, entertainment, and modern comfort.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-box">🛡️</div>
+            <h3 class="feature-title">Certified Road Safety</h3>
+            <p class="feature-text">
+              Every driver undergoes certified defensive driving training, mandatory alcohol screening, and speed monitoring via satellite telematics.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">🎉</div>
+            <h3 class="feature-title">Curated Fun &amp; Outdooring</h3>
+            <p class="feature-text">
+              Our weekend tourist packages include park entry passes, canopy walk fees, certified tour guides, beach bonfires, and delicious Ghanaian meals.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">🛋️</div>
+            <h3 class="feature-title">First-Class Executive Comfort</h3>
+            <p class="feature-text">
+              Plush ergonomic reclining seats, generous legroom, icy air-conditioning, onboard charging ports, and free high-speed Wi-Fi.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">📱</div>
+            <h3 class="feature-title">Instant Digital Boarding Pass</h3>
+            <p class="feature-text">
+              Receive your confirmed digital ticket voucher instantly with a verified reference code for boarding with zero terminal delays.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-column">
+            <div class="about-image-card">
+              <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=900&q=80" alt="RouteWise luxury coach fleet" class="about-img" loading="lazy">
+              <div class="about-stat-overlay">
+                <span class="stat-number">98.4%</span>
+                <span class="stat-label">On-Time Departure Record</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-text-column">
+            <span class="section-tag">About RouteWise Travels</span>
+            <h2 class="section-title">Connecting Ghana's Cities &amp; Inspiring Adventures</h2>
+            <p class="about-lead">
+              RouteWise Travels was founded with a double mission: to transform routine intercity transportation into a dignified, punctual experience, and to make Ghana's magnificent tourist treasures accessible, exciting, and affordable for everyone.
+            </p>
+            <p class="about-paragraph">
+              From university student weekend groups seeking adrenaline on the Kakum canopy walkways to families enjoying peaceful cruises on Lake Volta, our fleet connects people with places and memories that last a lifetime.
+            </p>
+            
+            <div class="about-pillars-list">
+              <div class="pillar-item">
+                <span class="pillar-check">✓</span>
+                <div>
+                  <strong>Modern Scania &amp; Volvo Fleet:</strong> Regularly serviced according to international automotive safety benchmarks.
+                </div>
+              </div>
+              <div class="pillar-item">
+                <span class="pillar-check">✓</span>
+                <div>
+                  <strong>All-Inclusive Tourism Packages:</strong> Hassle-free outdooring with bus transit, entry passes, meals, and guides in one transparent price.
+                </div>
+              </div>
+              <div class="pillar-item">
+                <span class="pillar-check">✓</span>
+                <div>
+                  <strong>Dedicated Passenger Support:</strong> Terminal agents and hotline support ready to assist you every step of the journey.
+                </div>
+              </div>
+            </div>
+
+            <div class="stats-row">
+              <div class="stat-box">
+                <span class="stat-value">45+</span>
+                <span class="stat-caption">Modern Coaches</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-value">12+</span>
+                <span class="stat-caption">Tourist Destinations</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-value">50k+</span>
+                <span class="stat-caption">Happy Travelers</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Traveler Experiences</span>
+          <h2 class="section-title">Loved by Students, Tourists &amp; Squads</h2>
+          <p class="section-subtitle">See why Ghanaians and international visitors rave about our bus trips and tourist outdooring packages.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "Our department booked the Boti Falls &amp; Umbrella Rock outdooring package. The bus was freezing cold, the DJ played great Ghanaian hits all the way to Yilo Krobo, and the hike was pure adrenaline!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">KA</div>
+              <div>
+                <h4 class="author-name">Kofi Asare</h4>
+                <p class="author-title">Legon Student Union President</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "The Kakum Canopy Walk and beach outdooring was easily the highlight of my semester break. The tour guide was knowledgeable, and crossing the suspension bridges was an unmatched rush of excitement."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AA</div>
+              <div>
+                <h4 class="author-name">Abena Antwi</h4>
+                <p class="author-title">Fashion Entrepreneur &amp; Traveler</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "Lake Volta Sunday cruise with RouteWise was 10/10. Great food, great vibes, safe driving on the highway, and zero stress organizing logistics. The whole group is already planning Mole Safari next."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MB</div>
+              <div>
+                <h4 class="author-name">Mohammed Bawa</h4>
+                <p class="author-title">NGO Program Lead, Tamale</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Terminals Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Contact, Terminals &amp; Tour Desk</h2>
+          <p class="section-subtitle">
+            Have questions about group outdooring packages, bus schedules, or custom charters? Reach our 24/7 customer service desk.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-info-column">
+            
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <div>
+                <h3 class="info-title">Headquarters &amp; Central Terminal</h3>
+                <p class="info-text">
+                  Circle VIP Terminal Interchange, Kwame Nkrumah Avenue, Adabraka, Accra, Greater Accra Region, Ghana.
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">📞</div>
+              <div>
+                <h3 class="info-title">Customer Service &amp; Tour Desk</h3>
+                <p class="info-text">
+                  +233 (0) 30 200 4880 (Intercity Bookings)<br>
+                  +233 (0) 54 574 7166 (Jay's WhatsApp &amp; Inquiries)
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">✉️</div>
+              <div>
+                <h3 class="info-title">Email Inquiries</h3>
+                <p class="info-text">
+                  adventures@routewisetravels.demo.gh<br>
+                  bookings@routewisetravels.demo.gh
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card info-card-terminals">
+              <div class="info-icon">🏢</div>
+              <div>
+                <h3 class="info-title">Regional Departure Terminals</h3>
+                <ul class="terminals-list">
+                  <li><strong>Kumasi:</strong> Asafo VIP Terminal &amp; Kejetia Station</li>
+                  <li><strong>Cape Coast:</strong> Pedu Junction Express Hub</li>
+                  <li><strong>Takoradi:</strong> Market Circle Central Station</li>
+                  <li><strong>Tamale:</strong> Central Lorry Park &amp; Airport Road Hub</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="academic-note-box">
+              <span class="note-icon">ℹ️</span>
+              <p>
+                <strong>Academic Notice:</strong> All contact phone numbers, emails, and address locations listed above are mock demonstration fixtures prepared for this university coursework.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Contact Inquiries Form -->
+          <div class="contact-form-column">
+            <div class="contact-card">
+              <h3 class="contact-card-title">Send Us a Message / Tour Inquiry</h3>
+              <p class="contact-card-subtitle">Fill out this demo inquiry form and our virtual tour desk will respond.</p>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Full Name</label>
+                  <input type="text" id="contactName" name="contactName" class="form-control" placeholder="e.g. Kwame Mensah" required>
+                  <span class="field-error" id="contactNameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email Address</label>
+                  <input type="email" id="contactEmail" name="contactEmail" class="form-control" placeholder="e.g. kwame@example.com" required>
+                  <span class="field-error" id="contactEmailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactSubject" class="form-label">Inquiry Type</label>
+                  <select id="contactSubject" name="contactSubject" class="form-control">
+                    <option value="adventure">Group Outdooring &amp; Tourist Package Booking</option>
+                    <option value="schedule">Intercity Trip Schedule &amp; Timetable</option>
+                    <option value="charter">Private Coach Rental / Bus Charter</option>
+                    <option value="feedback">Feedback &amp; Suggestions</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage" class="form-label">Your Message</label>
+                  <textarea id="contactMessage" name="contactMessage" rows="4" class="form-control" placeholder="Tell us about your group size, preferred tourist site (e.g. Kakum, Boti, Wli, Mole), or travel questions..." required></textarea>
+                  <span class="field-error" id="contactMessageError"></span>
+                </div>
+
+                <button type="submit" id="contactSubmitBtn" class="btn btn-emerald btn-block">
+                  Send Demo Message
+                </button>
+              </form>
+
+              <div id="contactSuccessMsg" class="form-success-banner hidden" role="alert">
+                <span class="success-icon">✓</span>
+                <div>
+                  <strong>Message Received!</strong>
+                  <p>Thank you for testing the contact form. This demo inquiry has been registered locally.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        
+        <!-- Brand Summary Column -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-logo">
+            <span class="brand-name">RouteWise<span class="brand-gold">Travels</span></span>
+          </div>
+          <p class="footer-description">
+            Ghana's premier intercity coach travel and tourist adventure platform. Delivering executive comfort, verified safety, and unforgettable outdooring experiences to Ghana's most breathtaking sites.
+          </p>
+          <div class="social-links" aria-label="Social media channels">
+            <a href="#home" class="social-icon" aria-label="Facebook">FB</a>
+            <a href="#home" class="social-icon" aria-label="Twitter">X</a>
+            <a href="#home" class="social-icon" aria-label="Instagram">IG</a>
+            <a href="#home" class="social-icon" aria-label="LinkedIn">IN</a>
+          </div>
+        </div>
+
+        <!-- Navigation Links Column -->
+        <div class="footer-col">
+          <h4 class="footer-title">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#adventure-tours">🌴 Fun &amp; Outdooring Tours</a></li>
+            <li><a href="#destinations">Popular Destinations</a></li>
+            <li><a href="#search-section">Book Bus Ticket</a></li>
+            <li><a href="#trips-results">Available Schedules</a></li>
+            <li><a href="#about">About Our Fleet</a></li>
+            <li><a href="#contact">Contact &amp; Terminals</a></li>
+          </ul>
+        </div>
+
+        <!-- Ghana Tourist Attractions Column -->
+        <div class="footer-col">
+          <h4 class="footer-title">Top Tourist Expeditions</h4>
+          <ul class="footer-links">
+            <li><a href="#adventure-tours" class="footer-tour-link" data-tour-index="0">Kakum Canopy Walk &amp; Beach</a></li>
+            <li><a href="#adventure-tours" class="footer-tour-link" data-tour-index="1">Boti Twin Falls &amp; Umbrella Rock</a></li>
+            <li><a href="#adventure-tours" class="footer-tour-link" data-tour-index="2">Wli Waterfalls &amp; Mt. Afadjato</a></li>
+            <li><a href="#adventure-tours" class="footer-tour-link" data-tour-index="3">Lake Volta Boat Cruise &amp; Dam</a></li>
+            <li><a href="#adventure-tours" class="footer-tour-link" data-tour-index="4">Mole Safari &amp; Elephant Viewing</a></li>
+            <li><a href="#adventure-tours" class="footer-tour-link" data-tour-index="5">Shai Hills Caves &amp; Bush BBQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Academic & Legal Column -->
+        <div class="footer-col">
+          <h4 class="footer-title">Academic Details</h4>
+          <p class="footer-academic-text">
+            <strong>Institution:</strong> University Web Development Project<br>
+            <strong>Project Name:</strong> RouteWise Travels &amp; Tourist Portal<br>
+            <strong>Implementation:</strong> Semantic HTML5, Vanilla CSS3, &amp; ES6+ JavaScript.<br>
+            <strong>Status:</strong> Educational Demonstration
+          </p>
+          <div class="footer-badge">
+            <span>Vanilla Web Architecture</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 RouteWise Travels Ghana Ltd. Developed for Academic Demonstration. All rights reserved.</p>
+        <p class="footer-sub-disclaimer">No actual transportation services or payment processing are conducted by this website.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal Component -->
+  <div class="modal-backdrop" id="bookingModalBackdrop" aria-hidden="true">
+    <div class="modal-dialog" id="bookingModalDialog" role="dialog" aria-modal="true" aria-labelledby="modalTripTitle">
+      
+      <!-- Modal Close Button -->
+      <button type="button" class="modal-close-btn" id="closeModalBtn" aria-label="Close booking modal">&times;</button>
+
+      <!-- Step 1: Booking Form Screen -->
+      <div class="modal-step" id="modalStepForm">
+        
+        <div class="modal-header">
+          <span class="modal-tag" id="modalTag">Complete Your Reservation</span>
+          <h2 class="modal-title" id="modalTripTitle">Book Your Ticket</h2>
+          <p class="modal-subtitle" id="modalSubtitle">Review trip details and provide passenger information to generate your demo ticket.</p>
+        </div>
+
+        <!-- Selected Trip Summary Card -->
+        <div class="trip-summary-box">
+          <div class="summary-route-row">
+            <div class="summary-station">
+              <span class="summary-label" id="summaryOriginLabel">Departure Point</span>
+              <strong class="summary-city" id="summaryOrigin">Accra</strong>
+              <span class="summary-time" id="summaryDepartureTime">06:30 AM</span>
+            </div>
+            <div class="summary-connector">
+              <span class="summary-duration" id="summaryDuration">4h 30m</span>
+              <div class="summary-line">
+                <span class="summary-dot"></span>
+                <span class="summary-dot"></span>
+              </div>
+              <span class="summary-bus-type" id="summaryBusType">Scania VIP Executive</span>
+            </div>
+            <div class="summary-station summary-station-dest">
+              <span class="summary-label" id="summaryDestLabel">Destination</span>
+              <strong class="summary-city" id="summaryDestination">Kumasi</strong>
+              <span class="summary-time" id="summaryArrivalTime">11:00 AM</span>
+            </div>
+          </div>
+
+          <div class="summary-details-grid">
+            <div class="summary-detail">
+              <span class="detail-label">Travel Date</span>
+              <strong class="detail-val" id="summaryDate">2026-11-12</strong>
+            </div>
+            <div class="summary-detail">
+              <span class="detail-label">Travelers</span>
+              <strong class="detail-val" id="summaryPassengers">1 Person</strong>
+            </div>
+            <div class="summary-detail">
+              <span class="detail-label">Rate / Person</span>
+              <strong class="detail-val" id="summaryRate">GH₵ 130</strong>
+            </div>
+            <div class="summary-detail summary-detail-total">
+              <span class="detail-label">Total Amount</span>
+              <strong class="detail-val total-gold" id="summaryTotalFare">GH₵ 130</strong>
+            </div>
+          </div>
+
+          <!-- Included Outdooring Perks (Visible for Adventure Tours) -->
+          <div class="adventure-perks-box hidden" id="adventurePerksBox">
+            <span class="perks-badge">✨ Included In Tour Package:</span>
+            <span class="perk-tag" id="tourPerkText">Canopy Walk Pass, Beach Bonfire, Buffet Lunch &amp; Tour Guide</span>
+          </div>
+        </div>
+
+        <!-- Passenger Details Form -->
+        <form id="passengerBookingForm" class="passenger-form" novalidate>
+          <div class="form-group">
+            <label for="passengerName" class="form-label">Full Name (Primary Traveler) <span class="required-star">*</span></label>
+            <input type="text" id="passengerName" name="passengerName" class="form-control" placeholder="e.g. Kwame Mensah" required autocomplete="name">
+            <span class="field-error" id="nameError"></span>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="passengerPhone" class="form-label">Phone Number <span class="required-star">*</span></label>
+              <input type="tel" id="passengerPhone" name="passengerPhone" class="form-control" placeholder="e.g. 024 123 4567 or +233..." required autocomplete="tel">
+              <span class="field-error" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+              <label for="passengerEmail" class="form-label">Email Address <span class="required-star">*</span></label>
+              <input type="email" id="passengerEmail" name="passengerEmail" class="form-control" placeholder="e.g. kwame@example.com" required autocomplete="email">
+              <span class="field-error" id="emailError"></span>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="seatPreference" class="form-label">Seating / Activity Focus</label>
+              <select id="seatPreference" name="seatPreference" class="form-control">
+                <option value="Window Seat (Scenic View)">Window Seat (Scenic Countryside View)</option>
+                <option value="Aisle Seat (Easy Access)">Aisle Seat (Easy Access)</option>
+                <option value="Canopy & Hiking Squad">Canopy Walk &amp; Hiking Squad (Front)</option>
+                <option value="Relaxed Sightseer">Relaxed Sightseer &amp; Photography</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mealPreference" class="form-label">Dietary / Outdooring Snack Choice</label>
+              <select id="mealPreference" name="mealPreference" class="form-control">
+                <option value="Ghanaian Jollof & Grilled Chicken">Ghanaian Jollof &amp; Grilled Chicken</option>
+                <option value="Fried Yam & Crispy Chofi / Fish">Fried Yam &amp; Crispy Chofi / Fish</option>
+                <option value="Vegetarian Jollof & Salad">Vegetarian Jollof &amp; Fresh Salad</option>
+                <option value="Kelewele & Roast Groundnuts">Kelewele &amp; Roast Groundnuts</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-notice">
+            <span class="notice-badge">Simulated Booking</span>
+            <p>Submitting this form confirms your demo reservation. No real payment or card entry is required.</p>
+          </div>
+
+          <div class="modal-actions">
+            <button type="button" class="btn btn-outline" id="cancelBookingBtn">Cancel</button>
+            <button type="submit" class="btn btn-gold btn-confirm-booking" id="confirmBookingBtn">
+              Confirm &amp; Generate Demo Pass
+            </button>
+          </div>
+        </form>
+
+      </div>
+
+      <!-- Step 2: Confirmation & E-Ticket Screen -->
+      <div class="modal-step hidden" id="modalStepConfirmation">
+        
+        <div class="ticket-success-header">
+          <div class="success-icon-badge">✓</div>
+          <h2 class="modal-title" id="confirmTitle">Booking Confirmed!</h2>
+          <p class="modal-subtitle">Your trip has been successfully registered in our demonstration portal.</p>
+        </div>
+
+        <!-- Rendered E-Ticket Card -->
+        <div class="eticket-card" id="eTicketVoucher">
+          <div class="eticket-top">
+            <div class="eticket-brand">
+              <span class="eticket-logo">RouteWise<span class="eticket-gold">Travels</span></span>
+              <span class="eticket-badge" id="ticketTypeBadge">Official Demo E-Ticket</span>
+            </div>
+            <div class="eticket-ref-box">
+              <span class="ref-label">Booking Reference:</span>
+              <strong class="ref-code" id="ticketRefCode">RWT-GH-2026-89412</strong>
+            </div>
+          </div>
+
+          <div class="eticket-perforation"></div>
+
+          <div class="eticket-body">
+            <div class="ticket-route-banner">
+              <div class="ticket-station">
+                <span class="station-label">DEPARTURE</span>
+                <span class="station-city" id="ticketOrigin">Accra</span>
+                <span class="station-time" id="ticketDepTime">06:30 AM</span>
+              </div>
+              <div class="ticket-arrow-col">
+                <span class="ticket-bus-class" id="ticketBusClass">Scania VIP Executive</span>
+                <span class="ticket-arrow">─────── ➔ ───────</span>
+                <span class="ticket-duration" id="ticketDuration">4h 30m Direct</span>
+              </div>
+              <div class="ticket-station ticket-station-right">
+                <span class="station-label">DESTINATION / SITE</span>
+                <span class="station-city" id="ticketDestination">Kumasi</span>
+                <span class="station-time" id="ticketArrTime">11:00 AM</span>
+              </div>
+            </div>
+
+            <div class="ticket-grid">
+              <div class="ticket-cell">
+                <span class="cell-label">Primary Traveler</span>
+                <strong class="cell-value" id="ticketPassengerName">Kwame Mensah</strong>
+              </div>
+              <div class="ticket-cell">
+                <span class="cell-label">Phone Number</span>
+                <strong class="cell-value" id="ticketPhone">024 123 4567</strong>
+              </div>
+              <div class="ticket-cell">
+                <span class="cell-label">Travel Date</span>
+                <strong class="cell-value" id="ticketDate">2026-11-12</strong>
+              </div>
+              <div class="ticket-cell">
+                <span class="cell-label">Traveler Count</span>
+                <strong class="cell-value" id="ticketPassengers">1 Person</strong>
+              </div>
+              <div class="ticket-cell">
+                <span class="cell-label">Package / Seat</span>
+                <strong class="cell-value" id="ticketSeat">Seat 14A (Window)</strong>
+              </div>
+              <div class="ticket-cell">
+                <span class="cell-label">Total Amount Paid</span>
+                <strong class="cell-value total-highlight" id="ticketTotalAmount">GH₵ 130</strong>
+              </div>
+            </div>
+
+            <!-- Simulated Barcode / QR Section -->
+            <div class="ticket-barcode-wrap">
+              <div class="simulated-barcode">
+                <div class="barcode-lines"></div>
+                <span class="barcode-digits" id="ticketBarcodeText">RWT89412-2026-GH</span>
+              </div>
+              <div class="ticket-status-stamp">
+                <span class="stamp-verified" id="stampStatus">VERIFIED DEMO</span>
+                <span class="stamp-date">PRESENT AT BOARDING</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="confirmation-actions">
+          <button type="button" class="btn btn-outline" id="printTicketBtn">
+            🖨️ Print / Save Ticket
+          </button>
+          <button type="button" class="btn btn-emerald" id="doneBookingBtn">
+            Done &amp; Close
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- External JavaScript File -->
+  <script src="script.js" defer></script>
+</body>
+</html>
